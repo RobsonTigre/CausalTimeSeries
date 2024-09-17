@@ -14,10 +14,6 @@ library(CausalArima)
 
 rm(list = ls())
 
-# EN-US: Save the data to a parquet file
-# PT-BR: Salve os dados em um arquivo parquet
-data <- arrow::read_parquet("simulated_data.feather")
-
 # EN-US: Define the intervention timepoint (day when the intervention occurs)
 # PT-BR: Defina o ponto de intervenção (dia em que a intervenção ocorre)
 intervention_time <- 75
